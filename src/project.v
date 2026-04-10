@@ -2,7 +2,7 @@
  * Hypnotic concentric rings effect
  * ui_in[0] = speed (0=slow, 1=fast)
  * ui_in[1] = direction (0=outward, 1=inward)
- * 
+ *
  * SPDX-License-Identifier: Apache-2.0
  */
 

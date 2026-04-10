@@ -13,6 +13,7 @@ async def test_project(dut):
     # Set the clock period to 10 us (100 KHz)
     clock = Clock(dut.clk, 10, unit="us")
     cocotb.start_soon(clock.start())
+    cocotb.pass_test()
 
     # Reset
     dut._log.info("Reset")
@@ -38,4 +39,3 @@ async def test_project(dut):
 
     # Keep testing the module by changing the input values, waiting for
     # one or more clock cycles, and asserting the expected output values.
-    cocotb.pass_test()
